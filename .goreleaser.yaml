@@ -6,8 +6,7 @@ before:
   hooks:
     - go mod tidy
 builds:
-  - parallelism: 6
-    env:
+  - env:
       - CGO_ENABLED=0
     goos:
       - linux
